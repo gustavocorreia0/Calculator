@@ -1,14 +1,15 @@
 import math
-import basico, Trigonometria, geometriaPlana, estatistica
+import basico, Trigonometria, geometriaPlana, geometriaEspacial, estatistica
 
 
 print("Bem-vindo(a) à Calculadora Científica!")
 
 print("A Calculadora possui algumas áreas, dentre elas:")
-print("""[1] Aritmética Básica
+print("""[1] Aritmética BásicaS
 [2] Trigonometria
 [3] Geometria Plana
-[4] Estatística""")
+[4] Geometria Espacial
+[5] Estatística""")
 while True:
 
     op = int(input("Qual área da matemática deseja usar?\nOpção: "))
@@ -20,7 +21,9 @@ while True:
     elif op == 3:
         geometriaPlana.menu()
     elif op == 4:
-        estatistica.menu()
+        geometriaEspacial.menu()
+    elif op == 5:
+        estatistica.menu()  
     else:
         print("Opção Inválida")
         continue
@@ -31,7 +34,8 @@ while True:
         print("""[1] Aritmética Básica
 [2] Trigonometria
 [3] Geometria Plana
-[4] Estatística""")
+[4] Geometria Espacial
+[5] Estatística""")
     else:
         print("Obrigado e volte sempre!")
         break
